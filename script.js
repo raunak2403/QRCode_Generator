@@ -21,19 +21,3 @@ btn.addEventListener("click", function () {
         imgbox.classList.remove("show-img");
     }
 });
-
-// Optional: Function to reset QR code display
-function resetQRCode() {
-    qrtext.value = '';
-    qrimg.src = '';
-    imgbox.classList.remove("show-img");
-}
-
-// Optional: Debounce function for input change (if needed)
-function debounce(func, delay) {
-    let timer;
-    return function(...args) {
-        clearTimeout(timer);
-        timer = setTimeout(() => func.apply(this, args), delay);
-    };
-}
